@@ -48,7 +48,7 @@ html {
 
 section {
   padding: 3rem 2rem;
-  max-width: 800px;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
@@ -98,6 +98,11 @@ section {
   list-style: none;
 }
 
+.header .navbar .flex ul li {
+  float: left;
+  position: relative;
+}
+
 .header .navbar .flex ul li a {
   display: inline-block;
   padding: 1rem 2rem;
@@ -106,11 +111,29 @@ section {
   color: var(--black);
 }
 
-.header .navbar .flex ul li a:hover{
-    background-color: var(--main-color);
-    color: var(--white);
+.header .navbar .flex ul li a:hover {
+  background-color: var(--main-color);
+  color: var(--white);
 }
 
 .header .navbar .flex ul li a i {
-  margin-left: 1rem;
+  margin-left: 2rem;
+}
+
+.header .navbar .flex ul li ul {
+  position: absolute;
+  width: 17rem;
+  left: 0;
+}
+
+.header .navbar .flex ul li ul li {
+  width: 100%;
+}
+
+.header .navbar .flex ul li ul li a {
+  display: none;
+}
+
+.header .navbar .flex ul li:hover ul li a {
+  display:  block;
 }
